@@ -13,11 +13,11 @@ const socialNetworks = [
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/fernando-zhu-desenvolvedor-web/',
   },
-  {
-    icon: 'instagram',
-    name: 'Instagram',
-    url: 'https://www.instagram.com/bsd002/',
-  },
+  // {
+  //  icon: 'instagram',
+  //  name: 'Instagram',
+  //  url: 'https://www.instagram.com/bsd002/',
+  //},
   // {
   //   icon: 'twitter',
   //   name: 'Twitter',

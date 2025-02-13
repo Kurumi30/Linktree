@@ -1,7 +1,6 @@
 import { createTile } from "./utils.js"
 
 const main = document.querySelector('main')
-
 const socialNetworks = [
   {
     icon: 'github',
@@ -17,7 +16,7 @@ const socialNetworks = [
   //  icon: 'instagram',
   //  name: 'Instagram',
   //  url: 'https://www.instagram.com/bsd002/',
-  //},
+  // },
   // {
   //   icon: 'twitter',
   //   name: 'Twitter',

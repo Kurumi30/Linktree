@@ -30,7 +30,7 @@ const socialNetworks = [
   },
   {
     icon: 'font-awesome',
-    name: 'Em breve',
+    name: 'Em breve (Portfolio)',
     url: '#',
   },
 ]

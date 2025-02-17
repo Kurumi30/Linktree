@@ -10,7 +10,7 @@ const socialNetworks = [
   {
     icon: 'linkedin',
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/fernando-zhu-desenvolvedor-web/',
+    url: 'https://www.linkedin.com/in/fernando-zhu/',
   },
   // {
   //  icon: 'instagram',

@@ -6,7 +6,7 @@ addEventListener("DOMContentLoaded", async () => {
       method: "GET",
     })
       .then(response => response.json())
-      .then(data => data.login);
+      .then(data => data.login)
   }
 })
 

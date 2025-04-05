@@ -1,13 +1,20 @@
 import { createTile } from "./utils.js"
 
 addEventListener("DOMContentLoaded", async () => {
-  if (!document.title) {
-    document.title = await fetch("https://api.github.com/users/Kurumi30", {
-      method: "GET",
-    })
-      .then(response => response.json())
-      .then(data => data.login)
-  }
+  const info = await fetch("https://api.github.com/users/Kurumi30", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+
+  const { login, name, company: companyName } = await info.json()
+
+  if (!document.title) document.title = `${login} | ${name}`
+
+  const company = document.getElementById("company")
+
+  if (company) company.innerText = companyName
 })
 
 const main = document.querySelector('main')

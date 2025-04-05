@@ -8,7 +8,7 @@ addEventListener("DOMContentLoaded", async () => {
     },
   })
 
-  const { login, name, company: companyName } = await info.json()
+  const { login, name, company: companyName, avatar_url, html_url } = await info.json()
 
   if (!document.title) document.title = `${login} | ${name}`
 

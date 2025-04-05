@@ -1,5 +1,15 @@
 import { createTile } from "./utils.js"
 
+addEventListener("DOMContentLoaded", async () => {
+  if (!document.title) {
+    document.title = await fetch("https://api.github.com/users/Kurumi30", {
+      method: "GET",
+    })
+      .then((response) => response.json())
+      .then((data) => data.login);
+  }
+})
+
 const main = document.querySelector('main')
 const socialNetworks = [
   {

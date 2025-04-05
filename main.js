@@ -5,8 +5,8 @@ addEventListener("DOMContentLoaded", async () => {
     document.title = await fetch("https://api.github.com/users/Kurumi30", {
       method: "GET",
     })
-      .then((response) => response.json())
-      .then((data) => data.login);
+      .then(response => response.json())
+      .then(data => data.login);
   }
 })
 
